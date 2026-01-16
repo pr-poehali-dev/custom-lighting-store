@@ -22,24 +22,24 @@ const Index = () => {
   const catalogItems = [
     {
       id: 1,
-      title: 'Кристальная люстра Aurora',
+      title: 'Подвесной светильник Minimal',
       category: 'Индивидуальное изготовление',
-      image: 'https://cdn.poehali.dev/projects/87b89107-437d-45af-b277-9fd4aca14442/files/9d3ac888-333c-4af2-8e83-76b4a8b08594.jpg',
+      image: 'https://cdn.poehali.dev/projects/87b89107-437d-45af-b277-9fd4aca14442/files/33f61662-7a1d-48e4-96d6-22c1c11436e4.jpg',
       price: 'По запросу'
     },
     {
       id: 2,
-      title: 'Настенный светильник Brass',
+      title: 'Торшер Arc Contemporary',
       category: 'Известные марки',
-      image: 'https://cdn.poehali.dev/projects/87b89107-437d-45af-b277-9fd4aca14442/files/9abe3754-0bc8-4b18-b17b-d00a3122c5e4.jpg',
-      price: 'от 25 000 ₽'
+      image: 'https://cdn.poehali.dev/projects/87b89107-437d-45af-b277-9fd4aca14442/files/f17eee7f-dbc7-4d12-b379-a78d55d30258.jpg',
+      price: 'от 28 000 ₽'
     },
     {
       id: 3,
-      title: 'Торшер Geometric Modern',
+      title: 'Настольная лампа Geometric',
       category: 'Известные марки',
-      image: 'https://cdn.poehali.dev/projects/87b89107-437d-45af-b277-9fd4aca14442/files/f3389440-fa2a-43c2-a368-b5bde598d6b1.jpg',
-      price: 'от 35 000 ₽'
+      image: 'https://cdn.poehali.dev/projects/87b89107-437d-45af-b277-9fd4aca14442/files/45c56846-3f2d-4e6d-99a9-697fa64153ef.jpg',
+      price: 'от 18 000 ₽'
     }
   ];
 
@@ -53,7 +53,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-border">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-serif font-bold text-primary">LUMIÈRE</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-primary">LUMIÈRE</h1>
           <div className="hidden md:flex gap-8">
             <a href="#catalog" className="text-sm hover:text-accent transition-colors">Каталог</a>
             <a href="#wholesale" className="text-sm hover:text-accent transition-colors">Оптовые предложения</a>
@@ -69,7 +69,7 @@ const Index = () => {
 
       <section className="pt-32 pb-20 px-4 bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto text-center animate-fade-in">
-          <h2 className="text-5xl md:text-7xl font-serif font-bold mb-6 text-primary">
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 text-primary tracking-tight">
             Свет создаёт атмосферу
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -90,7 +90,7 @@ const Index = () => {
       <section id="catalog" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h3 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-primary">Каталог</h3>
+            <h3 className="text-4xl md:text-5xl font-bold mb-4 text-primary tracking-tight">Каталог</h3>
             <p className="text-lg text-muted-foreground">Эксклюзивные светильники и проверенные бренды</p>
           </div>
 
@@ -118,7 +118,7 @@ const Index = () => {
                       </div>
                     </div>
                     <CardContent className="p-6">
-                      <h4 className="text-xl font-serif font-semibold mb-2">{item.title}</h4>
+                      <h4 className="text-xl font-semibold mb-2 tracking-tight">{item.title}</h4>
                       <p className="text-2xl font-bold text-accent mb-4">{item.price}</p>
                       <Button className="w-full" variant="outline">
                         <Icon name="Info" size={16} className="mr-2" />
@@ -142,7 +142,7 @@ const Index = () => {
                       />
                     </div>
                     <CardContent className="p-6">
-                      <h4 className="text-xl font-serif font-semibold mb-2">{item.title}</h4>
+                      <h4 className="text-xl font-semibold mb-2 tracking-tight">{item.title}</h4>
                       <p className="text-2xl font-bold text-accent mb-4">{item.price}</p>
                       <Button className="w-full" variant="outline">Подробнее</Button>
                     </CardContent>
@@ -163,7 +163,7 @@ const Index = () => {
                       />
                     </div>
                     <CardContent className="p-6">
-                      <h4 className="text-xl font-serif font-semibold mb-2">{item.title}</h4>
+                      <h4 className="text-xl font-semibold mb-2 tracking-tight">{item.title}</h4>
                       <p className="text-2xl font-bold text-accent mb-4">{item.price}</p>
                       <Button className="w-full" variant="outline">Подробнее</Button>
                     </CardContent>
@@ -179,7 +179,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <Icon name="Package" size={64} className="mx-auto mb-6 text-accent" />
-            <h3 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-primary">Оптовые предложения</h3>
+            <h3 className="text-4xl md:text-5xl font-bold mb-6 text-primary tracking-tight">Оптовые предложения</h3>
             <p className="text-lg text-muted-foreground mb-8">
               Специальные условия для дизайнеров интерьера, архитекторов и застройщиков. 
               Гибкая система скидок, индивидуальный подход, быстрая доставка по всей России.
@@ -212,7 +212,7 @@ const Index = () => {
       <section id="portfolio" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h3 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-primary">Портфолио проектов</h3>
+            <h3 className="text-4xl md:text-5xl font-bold mb-4 text-primary tracking-tight">Портфолио проектов</h3>
             <p className="text-lg text-muted-foreground">Реализованные проекты для премиум сегмента</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -226,7 +226,7 @@ const Index = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div className="text-white">
-                      <h4 className="text-xl font-serif font-bold mb-1">{project.title}</h4>
+                      <h4 className="text-xl font-bold mb-1 tracking-tight">{project.title}</h4>
                       <p className="text-sm">{project.description}</p>
                     </div>
                   </div>
@@ -241,7 +241,7 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <Icon name="MessageSquare" size={64} className="mx-auto mb-6 text-accent" />
-            <h3 className="text-4xl md:text-5xl font-serif font-bold mb-4">Профессиональная консультация</h3>
+            <h3 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Профессиональная консультация</h3>
             <p className="text-lg opacity-90">
               Наши специалисты помогут подобрать идеальное освещение для вашего проекта
             </p>
@@ -305,7 +305,7 @@ const Index = () => {
 
       <section id="delivery" className="py-20 px-4 bg-muted/20">
         <div className="container mx-auto max-w-6xl">
-          <h3 className="text-4xl md:text-5xl font-serif font-bold mb-12 text-center text-primary">Доставка и оплата</h3>
+          <h3 className="text-4xl md:text-5xl font-bold mb-12 text-center text-primary tracking-tight">Доставка и оплата</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <div className="flex items-start gap-4 mb-6">
@@ -363,7 +363,7 @@ const Index = () => {
 
       <section id="contacts" className="py-20 px-4 bg-gradient-to-b from-background to-muted/30">
         <div className="container mx-auto max-w-4xl text-center">
-          <h3 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-primary">Контакты</h3>
+          <h3 className="text-4xl md:text-5xl font-bold mb-8 text-primary tracking-tight">Контакты</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <Card className="p-6">
               <Icon name="Phone" size={32} className="mx-auto mb-3 text-accent" />
@@ -389,7 +389,7 @@ const Index = () => {
 
       <footer className="bg-primary text-white py-12 px-4">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-serif font-bold mb-4">LUMIÈRE</h2>
+          <h2 className="text-3xl font-bold mb-4 tracking-tight">LUMIÈRE</h2>
           <p className="text-sm opacity-80 mb-6">Премиум светильники и индивидуальные решения с 2010 года</p>
           <div className="flex justify-center gap-6 mb-6">
             <Button variant="ghost" size="sm" className="text-white hover:text-accent">
